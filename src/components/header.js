@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-import avenirYellowLogo from "../assets/images/Avenir Yellow Logo.png";
+import AvenirLogo from "../assets/images/Avenir logo.jpg";
 
 export default function AppHeader() {
   return (
@@ -14,12 +14,7 @@ export default function AppHeader() {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img
-            src={avenirYellowLogo}
-            height="50px"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
+          <img src={AvenirLogo} height="50px" alt="Avenir logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -2,9 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import AppHeader from "./components/header";
 import Home from "./components/home";
-import About from "./components/about";
+import Aboutus from "./components/aboutus";
 
 import "./App.css";
+import RoomCarousel from "./components/roomcarousel/roomcarousel";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       </header>
       <main>
         <Home />
-        <About />
+        <Aboutus />
+        <RoomCarousel />
       </main>
     </div>
   );
