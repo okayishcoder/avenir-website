@@ -17,15 +17,15 @@ export default function Home() {
   ];
   return (
     <section id="home" className="home-block">
-      <video src={homeVideo} autoplay="true" muted="true" loop="true"></video>
+      <video src={homeVideo} autoPlay={true} muted={true} loop={true}></video>
       <div className="video-description">
-        <div class="static-text">
+        <div className="static-text">
           <div>Imagine More</div>
         </div>
         <div className="animated-text">
           {featuresList.map((feature) => {
             return (
-              <li>
+              <li key={feature}>
                 <p>{feature}</p>
               </li>
             );

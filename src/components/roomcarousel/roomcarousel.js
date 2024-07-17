@@ -16,8 +16,8 @@ export default function RoomCarousel() {
 
   const changeImage = (roomType, newImagePath) => {
     if (roomType === "hall") setHallPath(newImagePath);
-    if (roomType === "dining") setDiningPath(newImagePath);
-    if (roomType === "bath") setBathPath(newImagePath);
+    else if (roomType === "dining") setDiningPath(newImagePath);
+    else if (roomType === "bath") setBathPath(newImagePath);
     else return setBedroomPath(newImagePath);
   };
 
@@ -25,22 +25,22 @@ export default function RoomCarousel() {
     if (roomType === "hall") return hallPath;
     if (roomType === "dining") return diningPath;
     if (roomType === "bath") return bathPath;
-    else return bedroomPath;
+    return bedroomPath;
   };
 
   return (
-    <section id="roomcarousel" className="block">
+    <section id="roomcarousel">
       <Carousel data-bs-theme="dark" indicators={false} interval={null}>
         {imagesData.map((image) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={image.id}>
               <RoomCarouselImage path={getPath(image.id)} />
               <Carousel.Caption>
                 <Container fluid={true}>
                   <Row>
                     {image.rooms.map((room) => {
                       return (
-                        <Col>
+                        <Col key={room.title}>
                           <Button
                             variant="secondary"
                             id={image.id}

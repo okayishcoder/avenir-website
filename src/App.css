@@ -129,3 +129,25 @@
 .room-carousel-container {
   height: 80vh;
 }
+
+/* Services section */
+
+.services-section {
+  position: relative;
+}
+
+.services-content {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  top: 20%;
+  left: 8%;
+}
+
+.services-description {
+  padding-top: 3%;
+}
+
+.services-icon-row {
+  padding: 10px 0;
+}

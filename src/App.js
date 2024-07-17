@@ -6,6 +6,7 @@ import Aboutus from "./components/aboutus";
 
 import "./App.css";
 import RoomCarousel from "./components/roomcarousel/roomcarousel";
+import Services from "./components/services/services";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Home />
         <Aboutus />
         <RoomCarousel />
+        <Services />
       </main>
     </div>
   );
