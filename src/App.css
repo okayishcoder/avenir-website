@@ -140,7 +140,7 @@
   position: absolute;
   width: 20%;
   height: 30%;
-  top: 20%;
+  top: 15%;
   left: 8%;
 }
 
@@ -148,6 +148,18 @@
   padding-top: 3%;
 }
 
-.services-icon-row {
-  padding: 10px 0;
+.service-icon-col {
+  padding: 3% 3%;
+}
+
+.service-icon-text {
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-35%, -120%);
+  padding: 1% 5%;
 }
