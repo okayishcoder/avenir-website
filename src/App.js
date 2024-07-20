@@ -7,6 +7,7 @@ import Aboutus from "./components/aboutus";
 import "./App.css";
 import RoomCarousel from "./components/roomcarousel/roomcarousel";
 import Services from "./components/services/services";
+import Blogs from "./components/blogs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Aboutus />
         <RoomCarousel />
         <Services />
+        <Blogs />
       </main>
     </div>
   );

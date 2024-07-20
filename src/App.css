@@ -163,3 +163,17 @@
   transform: translate(-35%, -120%);
   padding: 1% 5%;
 }
+
+/* Blogs section */
+
+.blogs-section {
+  margin: 4% 2%;
+}
+
+.blog-card {
+  text-align: center;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}

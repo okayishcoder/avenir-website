@@ -20,8 +20,9 @@ export default function AppHeader() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="flex-grow-1 justify-content-end">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#aboutus">About us</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="#blogs">Blogs</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
