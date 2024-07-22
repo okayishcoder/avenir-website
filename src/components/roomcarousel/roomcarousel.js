@@ -29,8 +29,8 @@ export default function RoomCarousel() {
   };
 
   return (
-    <section id="roomcarousel">
-      <Carousel data-bs-theme="dark" indicators={false} interval={null}>
+    <section id="roomcarousel" data-bs-theme="dark" className="block">
+      <Carousel interval={2000}>
         {imagesData.map((image) => {
           return (
             <Carousel.Item key={image.id}>

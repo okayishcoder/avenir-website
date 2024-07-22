@@ -7,7 +7,8 @@ import Aboutus from "./components/aboutus";
 import "./App.css";
 import RoomCarousel from "./components/roomcarousel/roomcarousel";
 import Services from "./components/services/services";
-import Blogs from "./components/blogs";
+import Blogs from "./components/blogs/blogs";
+import ContactUs from "./components/contactus/contactus";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <RoomCarousel />
         <Services />
         <Blogs />
+        <ContactUs />
       </main>
     </div>
   );
