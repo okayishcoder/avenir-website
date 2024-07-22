@@ -1,12 +1,11 @@
 import { useState } from "react";
 
 import Carousel from "react-bootstrap/Carousel";
-import Button from "react-bootstrap/Button";
 
 import RoomCarouselImage from "./roomcarouselimage";
 
 import { imagesData } from "./roomcarouseldata";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 
 export default function RoomCarousel() {
   const [hallPath, setHallPath] = useState(imagesData[0].rooms[0].src);
@@ -29,31 +28,30 @@ export default function RoomCarousel() {
   };
 
   return (
-    <section id="roomcarousel" data-bs-theme="dark" className="block">
-      <Carousel interval={2000}>
-        {imagesData.map((image) => {
+    <section id="roomcarousel" className="block">
+      <Carousel interval={null} className="room-carousel">
+        {imagesData.map((image, i) => {
           return (
             <Carousel.Item key={image.id}>
               <RoomCarouselImage path={getPath(image.id)} />
               <Carousel.Caption>
                 <Container fluid={true}>
-                  <Row>
-                    {image.rooms.map((room) => {
+                  <div key={`inline-radio`} className="mb-3">
+                    {image.rooms.map((room, j) => {
                       return (
-                        <Col key={room.title}>
-                          <Button
-                            variant="secondary"
-                            id={image.id}
-                            onClick={() => {
-                              changeImage(image.id, room.src);
-                            }}
-                          >
-                            {room.title}
-                          </Button>
-                        </Col>
+                        <Form.Check
+                          key={j}
+                          inline
+                          label={room.title}
+                          name={`room-${i}`}
+                          type="radio"
+                          id={`inline-radio-${room.title}`}
+                          onChange={() => changeImage(image.id, room.src)}
+                          defaultChecked={j === 0 && true}
+                        />
                       );
                     })}
-                  </Row>
+                  </div>
                 </Container>
               </Carousel.Caption>
             </Carousel.Item>

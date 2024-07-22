@@ -1,19 +1,20 @@
+import { ReactTyped } from "react-typed";
 import homeVideo from "../assets/videos/Avenir Video.mp4";
 
 export default function Home() {
   const featuresList = [
     "Privacy",
-    // "Innovation",
-    // "Beauty",
-    // "Peace",
-    // "Comfort",
-    // "Flexibility",
-    // "Simplicity",
-    // "Security",
-    // "Delight",
-    // "Wellness",
-    // "Intelligence",
-    // "Magic",
+    "Innovation",
+    "Beauty",
+    "Peace",
+    "Comfort",
+    "Flexibility",
+    "Simplicity",
+    "Security",
+    "Delight",
+    "Wellness",
+    "Intelligence",
+    "Magic",
   ];
   return (
     <section id="home" className="home-block">
@@ -23,13 +24,16 @@ export default function Home() {
           <div>Imagine More</div>
         </div>
         <div className="animated-text">
-          {featuresList.map((feature) => {
-            return (
-              <li key={feature}>
-                <p>{feature}</p>
-              </li>
-            );
-          })}
+          <p>
+            <ReactTyped
+              strings={featuresList}
+              typeSpeed={100}
+              loop
+              backSpeed={20}
+              cursorChar="|"
+              showCursor={true}
+            />
+          </p>
         </div>
       </div>
     </section>
