@@ -1,5 +1,6 @@
 import { ReactTyped } from "react-typed";
 import homeVideo from "../assets/videos/Avenir Video.mp4";
+import { Container } from "react-bootstrap";
 
 export default function Home() {
   const featuresList = [
@@ -17,25 +18,27 @@ export default function Home() {
     "Magic",
   ];
   return (
-    <section id="home" className="home-block">
-      <video src={homeVideo} autoPlay={true} muted={true} loop={true}></video>
-      <div className="video-description">
-        <div className="static-text">
-          <div>Imagine More</div>
+    <section id="home" className="home-section shaded-bg">
+      <Container className="home-container">
+        <video src={homeVideo} autoPlay={true} muted={true} loop={true}></video>
+        <div className="video-description">
+          <div className="static-text">
+            <div>Imagine More</div>
+          </div>
+          <div className="animated-text">
+            <p>
+              <ReactTyped
+                strings={featuresList}
+                typeSpeed={100}
+                loop
+                backSpeed={20}
+                cursorChar="|"
+                showCursor={true}
+              />
+            </p>
+          </div>
         </div>
-        <div className="animated-text">
-          <p>
-            <ReactTyped
-              strings={featuresList}
-              typeSpeed={100}
-              loop
-              backSpeed={20}
-              cursorChar="|"
-              showCursor={true}
-            />
-          </p>
-        </div>
-      </div>
+      </Container>
     </section>
   );
 }

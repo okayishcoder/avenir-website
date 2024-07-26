@@ -28,7 +28,7 @@ export default function RoomCarousel() {
   };
 
   return (
-    <section id="roomcarousel" className="block">
+    <section id="roomcarousel" className="block shaded-bg">
       <Carousel interval={null} className="room-carousel">
         {imagesData.map((image, i) => {
           return (

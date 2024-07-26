@@ -32,7 +32,7 @@ const BlogAndModal = (props) => {
           <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Image src={props.imgPath} fluid />
+          <Image src={props.imgPath} fluid className="modal-img" />
           <p className="text-sa display-linebreak">{props.fullDescription}</p>
         </Modal.Body>
       </Modal>
