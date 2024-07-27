@@ -28,8 +28,8 @@ export default function RoomCarousel() {
   };
 
   return (
-    <section id="roomcarousel" className="block shaded-bg">
-      <Carousel interval={null} className="room-carousel">
+    <section id="roomcarousel" className="shaded-bg">
+      <Carousel interval={2000}>
         {imagesData.map((image, i) => {
           return (
             <Carousel.Item key={image.id}>

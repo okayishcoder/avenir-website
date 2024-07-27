@@ -16,11 +16,6 @@ const ServiceIcon = (props) => {
 
   return (
     <div>
-      <div>
-        <p className="service-icon-text" style={{ display: iconDisplay }}>
-          {props.title}
-        </p>
-      </div>
       <svg
         onMouseOver={onServiceIconHoverIn}
         onMouseOut={onServiceIconHoverOut}
@@ -29,11 +24,16 @@ const ServiceIcon = (props) => {
         data-name="Layer 1"
         viewBox="0 0 24 24"
         fill={iconColor}
-        width="30"
-        height="30"
+        width="25"
+        height="25"
       >
         <path d={props.path} />
       </svg>
+      <div>
+        <p className="service-icon-text" style={{ display: iconDisplay }}>
+          {props.title}
+        </p>
+      </div>
     </div>
   );
 };

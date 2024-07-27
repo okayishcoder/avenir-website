@@ -3,7 +3,7 @@ import Image from "react-bootstrap/Image";
 
 export default function RoomCarouselImage(props) {
   return (
-    <Container className="room-carousel-container">
+    <Container>
       <Image src={props.path} fluid />
     </Container>
   );
