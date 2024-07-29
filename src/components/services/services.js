@@ -19,7 +19,7 @@ export default function Services() {
         <Row className="services-img-icon-row">
           <Image src={servicesBackgroundImg} fluid />
           <Container className="services-icon-container">
-            <Row className="services-icon-row" xs={3} md={5}>
+            <Row xs={3} md={5}>
               {SERVICES_ICON_DATA.map((colData, i) => (
                 <Col key={colData.title} className="service-icon-col">
                   <ServiceIcon

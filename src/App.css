@@ -87,8 +87,8 @@ p {
 
 /* Blogs section */
 
-.blogs-section {
-  padding: 4% 7%;
+.slick-dots li button:before {
+  color: white;
 }
 
 .blog-card {

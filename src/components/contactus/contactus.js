@@ -11,7 +11,7 @@ import AddressIcon from "./icons/addressIcon";
 
 const ContactUs = () => {
   return (
-    <section id="contactus" className="contactus-section shaded-bg">
+    <section id="contactus" className="contactus-section">
       <Container fluid>
         <Row>
           <Col>
