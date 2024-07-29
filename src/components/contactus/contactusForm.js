@@ -21,14 +21,6 @@ const ContactusForm = () => {
           maxLength={64}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formCity">
-        <Form.Label>City</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter your city"
-          maxLength={85}
-        />
-      </Form.Group>
       <Form.Group className="mb-3" controlId="formMessage">
         <Form.Label>Your message</Form.Label>
         <Form.Control

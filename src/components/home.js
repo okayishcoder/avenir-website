@@ -22,7 +22,7 @@ export default function Home() {
       <Container className="home-container">
         <video src={homeVideo} autoPlay={true} muted={true} loop={true}></video>
         <div className="video-description">
-          <div className="static-text">
+          <div>
             <div>Imagine More</div>
           </div>
           <div className="animated-text">

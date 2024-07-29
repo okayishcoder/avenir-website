@@ -10,6 +10,7 @@ const LinkedinIcon = () => {
       // style="enable-background:new 0 0 24 24;"
       width="30"
       height="30"
+      className="m-2"
     >
       <g>
         <path

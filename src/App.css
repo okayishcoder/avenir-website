@@ -41,6 +41,10 @@ p {
   text-align: center;
 }
 
+.animated-text > p {
+  color: #fff;
+}
+
 /* About Us section */
 
 .aboutus-container {
@@ -123,25 +127,10 @@ p {
 /* Contactus section */
 
 .contactus-section {
-  padding: 4% 7%;
+  text-align: center;
 }
 
-.contactus-section h3 {
-  margin-bottom: 48px;
-}
-
-.contactus-section p {
-  margin-bottom: 8px;
-  display: inline-block;
-}
-
-.contactus-section svg {
-  margin-right: 16px;
-}
-
-.address-icon {
-  vertical-align: super;
-}
+/* Media query */
 
 @media (max-width: 480px) {
   .video-description {
@@ -152,5 +141,11 @@ p {
 @media (min-width: 481px) and (max-width: 1200px) {
   .video-description {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reachus-on-h3 {
+    margin-top: 1.5rem;
   }
 }
