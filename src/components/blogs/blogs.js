@@ -20,7 +20,7 @@ const Blogs = () => {
     };
   }, []);
 
-  var slidesToShow = width > 767 ? 3 : 1;
+  var slidesToShow = width > 767 ? 5 : 1;
 
   var settings = {
     autoplay: true,

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Card, Button, Modal, Image } from "react-bootstrap";
+import { Card, Button, Modal, Image } from 'react-bootstrap';
 
 const BlogAndModal = (props) => {
   const [showModal, setShowModal] = useState(false);
@@ -19,8 +19,8 @@ const BlogAndModal = (props) => {
               setShowModal(true);
             }}
           >
-            Primary
-          </Button>{" "}
+            Show more
+          </Button>{' '}
         </Card.Footer>
       </Card>
       <Modal

@@ -1,13 +1,13 @@
-import { Col, Container, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row, Stack } from 'react-bootstrap';
 
-import EmailIcon from "./icons/emailIcon";
-import FbIcon from "./icons/fbIcon";
-import InstaIcon from "./icons/instaIcon";
-import LinkedinIcon from "./icons/linkedinIcon";
-import PhoneIcon from "./icons/phoneIcon";
-import XIcon from "./icons/xIcon";
-import ContactusForm from "./contactusForm";
-import AddressIcon from "./icons/addressIcon";
+import EmailIcon from './icons/emailIcon';
+import FbIcon from './icons/fbIcon';
+import InstaIcon from './icons/instaIcon';
+import LinkedinIcon from './icons/linkedinIcon';
+import PhoneIcon from './icons/phoneIcon';
+import XIcon from './icons/xIcon';
+import ContactusForm from './contactusForm';
+import AddressIcon from './icons/addressIcon';
 
 const ContactUs = () => {
   return (
@@ -30,11 +30,11 @@ const ContactUs = () => {
               </div>
               <div>
                 <PhoneIcon />
-                <p>+91 123 456 7890</p>
+                <p>+91 786 380 4810</p>
               </div>
               <div>
                 <EmailIcon />
-                <p>avenir@gmail.com</p>
+                <p>info@theavenir.in</p>
               </div>
               <div>
                 <FbIcon />
