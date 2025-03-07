@@ -58,6 +58,19 @@ p {
 }
 
 /* Room Carousel Starts */
+.room-carousel-container {
+  height: 90vh;
+}
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.room-carousel-img-container {
+  height: 100%;
+  overflow: hidden;
+}
 
 /* Services section */
 

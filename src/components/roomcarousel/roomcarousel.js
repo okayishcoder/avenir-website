@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from 'react-bootstrap/Carousel';
 
-import RoomCarouselImage from "./roomcarouselimage";
+import RoomCarouselImage from './roomcarouselimage';
 
-import { imagesData } from "./roomcarouseldata";
-import { Container, Form } from "react-bootstrap";
+import { imagesData } from './roomcarouseldata';
+import { Container, Form } from 'react-bootstrap';
 
 export default function RoomCarousel() {
   const [hallPath, setHallPath] = useState(imagesData[0].rooms[0].src);
@@ -14,22 +14,22 @@ export default function RoomCarousel() {
   const [bedroomPath, setBedroomPath] = useState(imagesData[3].rooms[0].src);
 
   const changeImage = (roomType, newImagePath) => {
-    if (roomType === "hall") setHallPath(newImagePath);
-    else if (roomType === "dining") setDiningPath(newImagePath);
-    else if (roomType === "bath") setBathPath(newImagePath);
+    if (roomType === 'hall') setHallPath(newImagePath);
+    else if (roomType === 'dining') setDiningPath(newImagePath);
+    else if (roomType === 'bath') setBathPath(newImagePath);
     else return setBedroomPath(newImagePath);
   };
 
   const getPath = (roomType) => {
-    if (roomType === "hall") return hallPath;
-    if (roomType === "dining") return diningPath;
-    if (roomType === "bath") return bathPath;
+    if (roomType === 'hall') return hallPath;
+    if (roomType === 'dining') return diningPath;
+    if (roomType === 'bath') return bathPath;
     return bedroomPath;
   };
 
   return (
-    <section id="roomcarousel" className="shaded-bg">
-      <Carousel interval={2000}>
+    <section id="roomcarousel" className="shaded-bg room-carousel-container">
+      <Carousel interval={3000}>
         {imagesData.map((image, i) => {
           return (
             <Carousel.Item key={image.id}>

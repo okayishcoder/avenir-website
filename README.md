@@ -1,3 +1,31 @@
+# The Avenir Website
+
+This website is coded with react + react bootstrap, and for contact us emailing Emailjs is used.
+
+## Deployment
+
+For deployment we are using Firebase as the static website hoster, info@theavenir.in is the linked account.
+
+### How to deploy changes
+
+After making necessary changes in the code, follow below steps to deploy the changes:
+
+1. npm run build
+2. npm i -g firebase-tools (if not already installed, if new system)
+3. firebase login (login with info@theavenir.in acc)
+4. firebase init
+   a. Choose "Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys" as the only option and proceed.
+   b. Next choose "Use an existing project", and choose the-avenir project.
+   c. Then choose below options:
+   i. What do you want to use as your public directory? build
+   ii. Configure as a single-page app (rewrite all urls to /index.html)? Yes
+   iii. Set up automatic builds and deploys with GitHub? No
+   iv. File build/index.html already exists. Overwrite? No
+
+Done.
+
+Below is auto generated Readme text.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
