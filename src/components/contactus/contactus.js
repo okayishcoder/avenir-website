@@ -1,11 +1,9 @@
 import { Col, Container, Row, Stack } from 'react-bootstrap';
 
 import EmailIcon from './icons/emailIcon';
-import FbIcon from './icons/fbIcon';
 import InstaIcon from './icons/instaIcon';
 import LinkedinIcon from './icons/linkedinIcon';
 import PhoneIcon from './icons/phoneIcon';
-import XIcon from './icons/xIcon';
 import ContactusForm from './contactusForm';
 import AddressIcon from './icons/addressIcon';
 
@@ -37,10 +35,20 @@ const ContactUs = () => {
                 <p>info@theavenir.in</p>
               </div>
               <div>
-                <FbIcon />
-                <LinkedinIcon />
-                <InstaIcon />
-                <XIcon />
+                <a
+                  href="https://www.linkedin.com/company/avenir-india/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinIcon />
+                </a>
+                <a
+                  href="https://www.instagram.com/avenir_luxury_home_technology/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InstaIcon />
+                </a>
               </div>
             </Stack>
           </Col>

@@ -26,7 +26,7 @@ const BlogAndModal = (props) => {
       <Modal
         show={showModal}
         onHide={() => setShowModal(false)}
-        dialogClassName="modal-90w text-ca"
+        dialogClassName="modal-80w text-ca"
       >
         <Modal.Header closeButton>
           <Modal.Title>{props.title}</Modal.Title>

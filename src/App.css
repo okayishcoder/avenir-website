@@ -103,8 +103,8 @@ p {
   margin: 0 10px;
 }
 
-.modal-90w {
-  min-width: 90%;
+.modal-80w {
+  min-width: 80%;
 }
 
 .text-ca {
@@ -120,8 +120,7 @@ p {
 }
 
 .modal-img {
-  float: left;
-  margin-right: 1rem;
+  width: 30vw;
 }
 
 /* Contactus section */
